@@ -1,0 +1,21 @@
+.weather{
+    background: #fff;
+    max-width: 70%;
+    margin: 1rem auto;
+    padding: 0.5rem 2rem;
+}
+.datetime{
+    display: flex;
+    align-items: center;
+    margin-top: -2.5rem;
+    gap: 1rem;
+}
+.temp{
+    display: flex;
+    align-items: center;
+}
+.temperature{
+    font-size: 7rem;
+    /* border: 1px solid red; */
+    margin: 0;
+}
