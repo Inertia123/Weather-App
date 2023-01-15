@@ -1,21 +1,86 @@
 .weather{
     background: #fff;
-    max-width: 70%;
+    max-width: 60%;
     margin: 1rem auto;
-    padding: 0.5rem 2rem;
+    padding: 1rem 2rem 0rem; 
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-radius: 0.5rem;
 }
 .datetime{
     display: flex;
     align-items: center;
-    margin-top: -2.5rem;
     gap: 1rem;
+    color: rgb(75, 75, 75);
 }
 .temp{
     display: flex;
     align-items: center;
+    gap: 4rem;
+    margin-top: -1rem;
 }
 .temperature{
     font-size: 7rem;
-    /* border: 1px solid red; */
-    margin: 0;
+}
+.pictorial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -2rem;
+}
+.pictorial img{
+    height: 6rem;
+}
+.para{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    color: rgb(75, 75, 75);
+}
+
+.para:nth-child(2){
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 1000px){
+    .temperature{
+        font-size: 4rem;
+    }
+    .weather{
+        max-width: 100%;
+        flex-direction: column-reverse;
+        padding: 1rem 2rem;
+    }
+    .city{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .datetime{
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+    .temp{
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+    .pictorial{
+        margin: 0;
+    }
+    .pictorial img{
+        height: 3rem;
+    }
+    .pictorial p{
+        font-size: 0.8rem;
+    }
+    .para {
+        margin-top: 0.2rem;
+        font-size: 0.8rem;
+    }
+
+    .para:nth-child(2) {
+        margin-top: 0.5rem;
+    }
 }
